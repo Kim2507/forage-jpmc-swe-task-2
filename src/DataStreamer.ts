@@ -15,7 +15,8 @@ export interface ServerRespond {
 
 class DataStreamer {
   // The url where datafeed server is listening
-  static API_URL: string = 'http://localhost:8080/query?id=1';
+  // changed port number dues to My Kim Trinh's local port conflict
+  static API_URL: string = 'http://localhost:18081/query?id=1';
 
   /**
    * Send request to the datafeed server and executes callback function on success
